@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
---primary-color: #E50914;
---primary-hover: #FF2D55;
---bg-primary: #111111;
---bg-secondary: #1B1B1B;
---bg-card: #202020;
---text-primary: #FFFFFF;
---text-secondary: #B3B3B3;
---border-color: #2D2D2D;
+  --primary-color: #e50914;
+  --primary-hover: #ff2d55;
+  --bg-primary: #111111;
+  --bg-secondary: #1b1b1b;
+  --bg-card: #202020;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --border-color: #2d2d2d;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

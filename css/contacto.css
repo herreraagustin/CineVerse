@@ -1,18 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
---primary-color: #E50914;
---primary-hover: #FF2D55;
---bg-primary: #111111;
---bg-secondary: #1B1B1B;
---bg-card: #202020;
---text-primary: #FFFFFF;
---text-secondary: #B3B3B3;
---border-color: #2D2D2D;
+  --primary-color: #e50914;
+  --primary-hover: #ff2d55;
+  --bg-primary: #111111;
+  --bg-secondary: #1b1b1b;
+  --bg-card: #202020;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --border-color: #2d2d2d;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topbar {
+  background-color: var(--bg-primary);
+  font-family: "Montserrat", sans-serif;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-color);
+  top: 0;
+  z-index: 1030;
+}
+
+.logo-box img {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.cine-white {
+  color: var(--text-primary);
+}
+
+.cine-red {
+  color: var(--primary-color);
+}
+
+.menu {
+  gap: 6px;
+}
+
+.menu .nav-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: color 0.25s ease;
+}
+
+.menu .nav-link:hover,
+.menu .nav-link.active {
+  color: var(--primary-hover);
+}
+
+.right-side {
+  gap: 4px;
+}
+
+.buscador input {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  width: 220px;
+}
+
+.buscador input::placeholder {
+  color: var(--text-secondary);
+}
+
+.buscador input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-hover);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.buscador .btn-outline-success {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.buscador .btn-outline-success:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+  background-color: transparent;
+}
+
+.btn-login {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.btn-login:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+}
+
+.btn-suscribir {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.25s ease;
+}
+
+.btn-suscribir:hover {
+  background-color: var(--primary-hover);
+  color: var(--text-primary);
+}
+
+@media (max-width: 991px) {
+  .right-side {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 12px;
+    gap: 10px;
+  }
+
+  .buscador input {
+    width: 100%;
+  }
+
+  .menu {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .btn-suscribir {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container-fluid {
+    flex-wrap: nowrap;
+  }
+
+  .menu {
+    gap: 2px;
+  }
+
+  .menu .nav-link {
+    padding: 8px 8px;
+    font-size: 0.85rem;
+  }
+
+  .buscador input {
+    width: 140px;
+  }
+
+  .right-side {
+    gap: 2px;
+  }
+
+  .btn-login,
+  .btn-suscribir {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .logo-box span {
+    font-size: 1.1rem;
+  }
 }
