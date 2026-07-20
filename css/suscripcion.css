@@ -280,7 +280,7 @@
   }
 }
 
-.hero {
+.base {
   background-color: var(--bg-card);
   color: var(--text-primary);
 }
