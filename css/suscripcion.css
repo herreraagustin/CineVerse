@@ -279,3 +279,8 @@
     font-size: 1.1rem;
   }
 }
+
+.base {
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+}
