@@ -279,3 +279,8 @@
     font-size: 1.1rem;
   }
 }
+
+.hero {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
