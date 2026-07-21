@@ -279,3 +279,8 @@
     font-size: 1.1rem;
   }
 }
+
+.planes {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
