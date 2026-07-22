@@ -247,6 +247,115 @@
   }
 }
 
+.contacto-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 40px 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+ 
+.contacto-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+.contacto-header h1 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+  letter-spacing: 0.3px;
+}
+ 
+.contacto-breadcrumb {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+ 
+.contacto-breadcrumb a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+ 
+.contacto-breadcrumb a:hover {
+  color: var(--primary-hover);
+}
+ 
+.contacto-breadcrumb-separador {
+  margin: 0 8px;
+  color: var(--border-color);
+}
+ 
+.contacto-breadcrumb-actual {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.contacto-info {
+  background-color: #141414;
+  color: #fff;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.contacto-info-titulo {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.contacto-info-texto {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  margin-bottom: 1.75rem;
+}
+
+.contacto-info-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contacto-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contacto-info-icono {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  background-color: #e50914;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.contacto-info-label {
+  display: block;
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contacto-info-valor {
+  display: block;
+  font-weight: 500;
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .container-fluid {
     flex-wrap: nowrap;
