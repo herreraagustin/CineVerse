@@ -292,6 +292,39 @@
   box-shadow: none;
 }
 
+.olvide-link {
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.olvide-link:hover {
+  color: var(--primary-hover);
+}
+
+.btn-entrar {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background-color 0.25s ease;
+}
+
+.btn-entrar:hover {
+  background-color: var(--primary-hover);
+}
+
+.login-input:invalid:not(:placeholder-shown) {
+  border-color: var(--primary-color);
+}
+
+.login-input:valid:not(:placeholder-shown) {
+  border-color: var(--border-color);
+}
+
 @media (max-width: 991px) {
   .right-side {
     flex-direction: column;
