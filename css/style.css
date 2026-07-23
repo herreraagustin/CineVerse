@@ -225,6 +225,35 @@
   text-align: center;
 }
 
+.caja-login {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cerrar-login {
+  float: right;
+}
+
+.login-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.login-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.login-label {
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
 @media (max-width: 991px) {
   .right-side {
     flex-direction: column;
