@@ -254,6 +254,44 @@
   margin-bottom: 6px;
 }
 
+.campo-icono {
+  position: relative;
+}
+
+.campo-icono i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.campo-icono .ojo-toggle {
+  left: auto;
+  right: 14px;
+  cursor: pointer;
+}
+
+.login-input {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 0.9rem;
+}
+
+.login-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.login-input:focus {
+  background-color: var(--bg-card);
+  border-color: var(--primary-hover);
+  color: var(--text-primary);
+  box-shadow: none;
+}
+
 @media (max-width: 991px) {
   .right-side {
     flex-direction: column;
