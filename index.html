@@ -196,6 +196,48 @@
             <p class="login-subtitle text-center mb-4">
               Bienvenido de nuevo a CineVerse
             </p>
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label login-label"
+                  >Correo electrónico</label
+                >
+                <div class="campo-icono">
+                  <i class="bi bi-envelope"></i>
+                  <input
+                    type="email"
+                    class="form-control login-input"
+                    id="loginEmail"
+                    placeholder="ejemplo@cineverse.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="loginPassword" class="form-label login-label"
+                  >Contraseña</label
+                >
+                <div class="campo-icono">
+                  <i class="bi bi-lock"></i>
+                  <input
+                    type="password"
+                    class="form-control login-input"
+                    id="loginPassword"
+                    placeholder="Ingresa tu contraseña"
+                    required
+                    minlength="6"
+                  />
+                  <i class="bi bi-eye ojo-toggle"></i>
+                </div>
+              </div>
+              <div class="text-end mb-3">
+                <a href="./pages/error404.html" class="olvide-link"
+                  >¿Olvidaste tu contraseña?</a
+                >
+              </div>
+              <button type="submit" class="btn btn-entrar w-100 mb-3">
+                INICIAR SESIÓN
+              </button>
+            </form>
           </div>
         </div>
       </div>
