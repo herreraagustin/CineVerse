@@ -283,4 +283,22 @@
 .planes {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  border: var(--bg-primary);
+  height: 40rem;
+  width: 25rem;
+}
+
+.planes:hover {
+  border: var(--primary-color);
+}
+
+.btn-custom {
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+  border-color: var(--text-primary);
+}
+
+.btn-custom:hover {
+  color: var(--text-primary);
+  background-color: var(--primary-color);
 }
