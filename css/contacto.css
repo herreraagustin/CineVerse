@@ -11,6 +11,73 @@
   --border-color: #2d2d2d;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contacto-header{
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 40px 24px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.contacto-header-container{
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+.contacto-header h1{
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-primary);
+    margin: 0 0 10px;
+    letter-spacing: 0.3px;
+}
+
+.contacto-breadcrumb {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.contacto-breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2 ease;
+}
+
+.contacto-breadcrumb a:hover {
+    color: var(--primary-hover);
+}
+
+.contacto-breadcrumb-separador {
+    margin: 0 8px;
+    color: var(--border-color);
+}
+
+.contacto-breadcrumb-actual {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .contacto-header {
+    padding: 28px 20px;
+  }
+ 
+  .contacto-header h1 {
+    font-size: 24px;
+  }
+ 
+  .contacto-breadcrumb {
+    font-size: 12px;
+  }
+
 * {
   margin: 0;
   padding: 0;
@@ -278,4 +345,6 @@
   .logo-box span {
     font-size: 1.1rem;
   }
+}
+
 }
