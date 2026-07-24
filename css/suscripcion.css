@@ -283,15 +283,15 @@
 .planes {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  height: 35rem;
-  width: 22rem;
+  height: 65vh;
+  width: 20vw;
 }
 
 .planes:hover {
   border-color: var(--primary-color);
   border-width: 3px;
   transition: 0,3s;
-  bor
+  box-shadow: 5px 5px 10px;
 }
 
 .btn-custom {
