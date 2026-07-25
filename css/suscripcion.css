@@ -283,15 +283,8 @@
 .planes {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  height: 65vh;
-  width: 20vw;
-}
-
-.planes:hover {
-  border-color: var(--primary-color);
-  border-width: 3px;
-  transition: 0,3s;
-  box-shadow: 5px 5px 10px;
+  height: 32rem;
+  width: 20rem;
 }
 
 .btn-custom {
@@ -300,7 +293,23 @@
   border-color: var(--text-primary);
 }
 
-.btn-custom:hover {
+.planes:hover {
+  border-color: var(--primary-color);
+  border-width: 3px;
+  transition: 0,3s;
+  border-radius: 8px;
+  transform: scale(1.1);
+}
+
+
+.planes:hover .btn-custom {
   color: var(--text-primary);
   background-color: var(--primary-color);
+}
+
+a.enlace {
+  all: unset;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
 }
