@@ -153,6 +153,27 @@
   letter-spacing: 0.5px;
 }
 
+.contacto-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 40px 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.contacto-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacto-header h1 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+  letter-spacing: 0.3px;
+}
+
 .foot-text {
   color: var(--text-secondary);
   font-size: 0.9rem;
