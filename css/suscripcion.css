@@ -301,7 +301,6 @@
   transform: scale(1.1);
 }
 
-
 .planes:hover .btn-custom {
   color: var(--text-primary);
   background-color: var(--primary-color);
