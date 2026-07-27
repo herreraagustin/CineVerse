@@ -291,5 +291,10 @@ main {
 
 .imput-custom {
   background-color: var(--border-color);
-  color: white;
+  color: var(--text-primary);
+}
+
+.btn-custom {
+  color: var(--text-primary);
+  background-color: var(--primary-color);
 }
