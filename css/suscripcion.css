@@ -288,3 +288,8 @@ main {
   background-color: var(--bg-card);
   color: var(--text-primary);
 }
+
+.imput-custom {
+  background-color: var(--border-color);
+  color: white;
+}

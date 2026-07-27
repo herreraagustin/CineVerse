@@ -144,7 +144,7 @@
             >
             <input
               type="text"
-              class="form-control"
+              class="form-control imput-custom"
               id="validationDefault01"
               value="Mark"
               required
@@ -156,7 +156,7 @@
             >
             <input
               type="text"
-              class="form-control"
+              class="form-control imput-custom"
               id="validationDefault02"
               value="Otto"
               required
@@ -170,7 +170,7 @@
               <span class="input-group-text" id="inputGroupPrepend2">@</span>
               <input
                 type="text"
-                class="form-control"
+                class="form-control imput-custom"
                 id="validationDefaultUsername"
                 aria-describedby="inputGroupPrepend2"
                 required
@@ -181,7 +181,7 @@
             <label for="validationDefault03" class="form-label">City</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control imput-custom"
               id="validationDefault03"
               required
             />
@@ -197,7 +197,7 @@
             <label for="validationDefault05" class="form-label">Zip</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control imput-custom"
               id="validationDefault05"
               required
             />
@@ -227,14 +227,25 @@
           <div class="row">
             <div class="col-md-6 mb-3">
               <label class="form-label">Nombre</label>
-              <input type="text" class="form-control" placeholder="Tu nombre" />
+              <input
+                type="text"
+                class="form-control imput-custom"
+                id="validationDefault02"
+                placeholder="tu nombre"
+                minlength="2"
+                maxlength="40"
+                required
+              />
             </div>
             <div class="col-md-6 mb-3">
               <label class="form-label">Apellido</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control imput-custom"
                 placeholder="Tu apellido"
+                minlength="2"
+                maxlength="40"
+                required
               />
             </div>
           </div>
@@ -243,16 +254,22 @@
               <label class="form-label">Email</label>
               <input
                 type="email"
-                class="form-control"
+                class="form-control imput-custom"
                 placeholder="correo@ejemplo.com"
+                minlength="5"
+                maxlength="200"
+                required
               />
             </div>
             <div class="col-md-6 mb-3">
               <label class="form-label">Confirmar Email</label>
               <input
                 type="email"
-                class="form-control"
+                class="form-control imput-custom"
                 placeholder="Repite tu correo"
+                minlength="5"
+                maxlength="200"
+                required
               />
             </div>
           </div>
@@ -272,16 +289,22 @@
               <label class="form-label">Contraseña</label>
               <input
                 type="password"
-                class="form-control"
+                class="form-control imput-custom"
                 placeholder="********"
+                minlength="8"
+                maxlength="40"
+                required
               />
             </div>
             <div class="col-md-6 mb-3">
               <label class="form-label">Confirmar Contraseña</label>
               <input
                 type="password"
-                class="form-control"
+                class="form-control imput-custom"
                 placeholder="********"
+                minlength="8"
+                maxlength="40"
+                required
               />
             </div>
           </div>
