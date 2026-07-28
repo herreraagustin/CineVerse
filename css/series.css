@@ -184,6 +184,31 @@
   font-weight: 600;
 }
 
+.series-filtros {
+  background-color: var(--bg-secondary);
+  padding: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.series-filtros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dropdown-menu-dark {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+}
+
+.dropdown-menu-dark .dropdown-item {
+  color: var(--text-secondary);
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+  background-color: var(--bg-secondary);
+  color: var(--primary-hover);
+}
+
 .botfoot {
   background-color: var(--bg-primary);
   font-family: "Montserrat", sans-serif;
