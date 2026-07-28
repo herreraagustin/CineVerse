@@ -209,6 +209,11 @@
   color: var(--primary-hover);
 }
 
+.series-grid-section {
+  padding: 30px 0 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
 .botfoot {
   background-color: var(--bg-primary);
   font-family: "Montserrat", sans-serif;
