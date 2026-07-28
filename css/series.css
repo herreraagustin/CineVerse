@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--bg-primary);
+}
+
 .topbar {
   background-color: var(--bg-primary);
   font-family: "Montserrat", sans-serif;
@@ -260,6 +264,32 @@
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
+}
+
+.pagination .page-link {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  margin: 0 3px;
+  border-radius: 8px;
+}
+
+.pagination .page-link:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-primary);
 }
 
 .botfoot {
