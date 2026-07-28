@@ -16,3 +16,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.error404 {
+  min-height: 100vh;
+  background-image: url("/assets/img/error404fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error404-content {
+  max-width: 600px;
+  padding: 0 60px;
+}
