@@ -76,3 +76,32 @@
   background-color: var(--primary-hover);
   color: var(--text-primary);
 }
+
+@media (max-width: 768px) {
+  .error404-content {
+    padding: 0 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .error404-code {
+    font-size: 4rem;
+  }
+
+  .error404-titulo {
+    font-size: 1.3rem;
+  }
+
+  .error404-btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .error404-code {
+    font-size: 3rem;
+    letter-spacing: 6px;
+  }
+}
