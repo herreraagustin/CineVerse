@@ -184,6 +184,17 @@
   font-weight: 600;
 }
 
+.series-filtros {
+  background-color: var(--bg-secondary);
+  padding: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.series-filtros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .botfoot {
   background-color: var(--bg-primary);
   font-family: "Montserrat", sans-serif;
