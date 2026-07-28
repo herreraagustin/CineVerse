@@ -32,3 +32,27 @@
   max-width: 600px;
   padding: 0 60px;
 }
+
+.error404-code {
+  color: var(--text-primary);
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.error404-titulo {
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.error404-texto {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
