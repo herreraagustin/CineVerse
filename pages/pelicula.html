@@ -109,7 +109,190 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="peliculas-header">
+        <div class="peliculas-header-container">
+          <h1>Peliculas</h1>
+          <nav class="peliculas-breadcrumb" aria-label="breadcrumb">
+            <a href="/index.html">Inicio</a>
+            <span class="peliculas-breadcrumb-separador">/</span>
+            <span class="peliculas-breadcrumb-actual">Peliculas</span>
+          </nav>
+        </div>
+      </section>
+      <section class="peliculas-filtros">
+        <div
+          class="peliculas-filtros-container d-flex flex-wrap align-items-center gap-3"
+        >
+          <div class="dropdown">
+            <button
+              class="btn btn-login dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Género
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Todos</a></li>
+              <li><a class="dropdown-item" href="#">Acción</a></li>
+              <li><a class="dropdown-item" href="#">Comedia</a></li>
+              <li><a class="dropdown-item" href="#">Terror</a></li>
+              <li><a class="dropdown-item" href="#">Ciencia ficción</a></li>
+              <li><a class="dropdown-item" href="#">Drama</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-login dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Más populares
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Más populares</a></li>
+              <li><a class="dropdown-item" href="#">Más recientes</a></li>
+              <li><a class="dropdown-item" href="#">A - Z</a></li>
+            </ul>
+          </div>
+          <form class="buscador d-flex ms-lg-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar películas..."
+              aria-label="Buscar películas"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="peliculas-grid-section">
+        <div class="container-fluid px-4">
+          <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src=""
+                  alt="Ejemplo"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>Ejemplo</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dAklroSyDXTdDB6Wtrp6dVWtVqoApW8yv5hOGKgMI2Ir_ETluHY_4Dm_&s=10"
+                  alt="John Wick Capítulo 4"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>John Wick Capítulo 4</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/RCIIWCI4NVIBPFLS672R5QXFH4.jpg"
+                  alt="Spider-Man No Way Home"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>Spider-Man No Way Home</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgxnsWk27XbfvVUzF5JOGShg_q32DVDWY74vFrpkdACFQltRV8N2AVx_Po&s=10"
+                  alt="Oppenheimer"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>Oppenheimer</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6knyX-i0_VUgNEXaEzfyaabU6rHPvXGkShEMVoqfbUQ&s=10"
+                  alt="Guardianes de la Galaxia"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>Guardianes de la Galaxia</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src="https://www.universalpictures.com.ar/tl_files/content/movies/fastx/poster/01.jpg"
+                  alt="Rápidos y Furiosos X"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>Rápidos y Furiosos X</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxUfiIDajMbuOLsCTRabHFM-0X1FGOz58GyLB1Ou6YgH4ZSe3wQTQMHxZ&s=10"
+                  alt="The Batman"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>The Batman</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="peliculas-card">
+                <img
+                  src="https://es.web.img2.acsta.net/pictures/22/03/29/15/57/1533124.jpg"
+                  alt="Top Gun Maverick"
+                />
+                <div class="peliculas-card-info">
+                  <span class="peliculas-card-linea"></span>
+                  <h3>Top Gun Maverick</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav aria-label="Paginación de películas" class="peliculas-paginacion">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
     <footer class="botfoot">
       <div class="container-fluid px-4 py-5">
         <div class="row gy-4">
