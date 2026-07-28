@@ -241,7 +241,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.));
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: var(--wc-blanco);
@@ -274,9 +274,15 @@
   max-width: 480px;
 }
 
-.btn-hero-primario:hover {
-  background-color: var(--primary-hover);
-  color: var(--text-primary);
+.btn-hero-primario {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: 0,3s ease;
+}
+
+.btn-hero-primario a:hover {
+
+  color: var(--primary-color);
 }
 
 .btn-hero-secundario {
