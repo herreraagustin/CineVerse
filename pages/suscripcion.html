@@ -136,98 +136,109 @@
           </div>
         </div>
       </article>
-      <div class="container base py-5 px-4">
-        <h2 class="text-center">Crea tu cuenta</h2>
-        <form>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Nombre</label>
-              <input
-                type="text"
-                class="form-control imput-custom"
-                placeholder="Tu nombre"
-                minlength="2"
-                maxlength="40"
-                required
-              />
-            </div>
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Apellido</label>
-              <input
-                type="text"
-                class="form-control imput-custom"
-                placeholder="Tu apellido"
-                minlength="2"
-                maxlength="40"
-                required
-              />
-            </div>
+      <section class="container py-5">
+        <div class="row justify-content-center">
+          <div>
+            <h1 class="text-center fw-bold mb-5">Crea tu cuenta</h1>
+            <form>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Tu nombre"
+                    minlength="2"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido"
+                    placeholder="Tu apellido"
+                    minlength="2"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="correo@ejemplo.com"
+                    minlength="5"
+                    maxlength="200"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="confirmarEmail" class="form-label"
+                    >Confirmar Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="confirmarEmail"
+                    placeholder="Repite tu correo"
+                    minlength="5"
+                    maxlength="200"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="pais" class="form-label">País</label>
+                  <select id="pais" class="form-select" required>
+                    <option value="" selected disabled>
+                      Seleccione un país
+                    </option>
+                    <option>Argentina</option>
+                    <option>Uruguay</option>
+                    <option>Chile</option>
+                    <option>Paraguay</option>
+                    <option>Brasil</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="••••••••"
+                    minlength="8"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="confirmarPassword" class="form-label">
+                    Confirmar Contraseña
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmarPassword"
+                    placeholder="••••••••"
+                    minlength="8"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-12 mt-4">
+                  <button class="btn btn-danger w-100">Crear Cuenta</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control imput-custom"
-                placeholder="correo@ejemplo.com"
-                minlength="5"
-                maxlength="200"
-                required
-              />
-            </div>
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Confirmar Email</label>
-              <input
-                type="email"
-                class="form-control imput-custom"
-                placeholder="Repite tu correo"
-                minlength="5"
-                maxlength="200"
-                required
-              />
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">pais</label>
-            <select class="form-select base">
-              <option selected disabled>Seleccione un pais</option>
-              <option>Argentina</option>
-              <option>Uuruguay</option>
-              <option>Brazil</option>
-              <option>Colombia</option>
-              <option>Mexico</option>
-              <option>China</option>
-            </select>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Contraseña</label>
-              <input
-                type="password"
-                class="form-control imput-custom"
-                placeholder="********"
-                minlength="8"
-                maxlength="40"
-                required
-              />
-            </div>
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Confirmar Contraseña</label>
-              <input
-                type="password"
-                class="form-control imput-custom"
-                placeholder="********"
-                minlength="8"
-                maxlength="40"
-                required
-              />
-            </div>
-          </div>
-          <button class="w-100 btn btn-md btn-custom" type="submit">
-            Crear Cuenta
-          </button>
-        </form>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="botfoot">
       <div class="container-fluid px-4 py-5">
