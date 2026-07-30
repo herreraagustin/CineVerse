@@ -279,3 +279,19 @@
     font-size: 1.1rem;
   }
 }
+
+body {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+
+a.enlace {
+  color: var(--text-secondary);
+  text-decoration: inherit;
+  transition: 0,3s ease;
+}
+
+.enlace:hover {
+  color: var(--primary-hover);
+}
