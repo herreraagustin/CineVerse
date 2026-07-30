@@ -107,7 +107,190 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="series-header">
+        <div class="series-header-container">
+          <h1>Series</h1>
+          <nav class="series-breadcrumb" aria-label="breadcrumb">
+            <a href="/index.html">Inicio</a>
+            <span class="series-breadcrumb-separador">/</span>
+            <span class="series-breadcrumb-actual">Series</span>
+          </nav>
+        </div>
+      </section>
+      <section class="series-filtros">
+        <div
+          class="series-filtros-container d-flex flex-wrap align-items-center gap-3"
+        >
+          <div class="dropdown">
+            <button
+              class="btn btn-login dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Género
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Todos</a></li>
+              <li><a class="dropdown-item" href="#">Acción</a></li>
+              <li><a class="dropdown-item" href="#">Comedia</a></li>
+              <li><a class="dropdown-item" href="#">Terror</a></li>
+              <li><a class="dropdown-item" href="#">Ciencia ficción</a></li>
+              <li><a class="dropdown-item" href="#">Drama</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-login dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Más populares
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Más populares</a></li>
+              <li><a class="dropdown-item" href="#">Más recientes</a></li>
+              <li><a class="dropdown-item" href="#">A - Z</a></li>
+            </ul>
+          </div>
+          <form class="buscador d-flex ms-lg-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar series..."
+              aria-label="Buscar series"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="series-grid-section">
+        <div class="container-fluid px-4">
+          <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src=""
+                  alt="Ejemplo"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>Ejemplo</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2fAOBVknwjV2x8uXee9yZkBBKo3ON_qqVd8L5vhRJ6dQ_NpSfNp1K0EE&s=10"
+                  alt="The Last of Us"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>The Last of Us</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src="https://images.justwatch.com/poster/317683706/s718/la-casa-del-dragon.jpg"
+                  alt="House of the Dragon"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>House of the Dragon</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/thewitcher-cartel-1562925726.jpg?resize=980:*"
+                  alt="The Witcher"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>The Witcher</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7t16nR3bA0KkiFYhDUoDjz3XDqc2jhYpHmLHd4p-A44Fif47AL59oEcfZ&s=10"
+                  alt="La Casa de Papel"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>La Casa de Papel</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMGQ0YzI1NWUtOTEwYS00MDBjLTk5ZTItMzAwZjE4NzkzYTg4XkEyXkFqcGc@._V1_.jpg"
+                  alt="Vikings Valhalla"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>Vikings Valhalla</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQRr-K74NPZI70qFuqnPSYSejHFFa5cgqGdSvo64Xg5sr6sXHeiXx57i_m&s=10"
+                  alt="Peaky Blinders"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>Peaky Blinders</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="series-card">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMGRjZDBjODMtMWQ1Zi00MWRkLTk5YTMtMDU1NTNkMzhkM2QwXkEyXkFqcGc@._V1_.jpg"
+                  alt="Black Mirror"
+                />
+                <div class="series-card-info">
+                  <span class="series-card-linea"></span>
+                  <h3>Black Mirror</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav aria-label="Paginación de series" class="series-paginacion">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
     <footer class="botfoot">
       <div class="container-fluid px-4 py-5">
         <div class="row gy-4">
@@ -158,9 +341,7 @@
               <a href="https://trello.com/b/086Mx1SU/cineverse"
                 ><i class="bi bi-trello"></i
               ></a>
-              <a href="/pages/error404.html"
-                ><i class="bi bi-instagram"></i
-              ></a>
+              <a href="/pages/error404.html"><i class="bi bi-instagram"></i></a>
               <a href="/pages/error404.html"><i class="bi bi-twitter"></i></a>
             </div>
           </div>

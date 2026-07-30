@@ -357,6 +357,81 @@ h1 {
   color: var(--text-primary);
 }
 
+.plan{
+    width: 280px;
+    height: 520px;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    transition: border-color .3s ease, transform .3s ease;
+}
+
+.plan:hover{
+    border-color: var(--primary-color);
+    transform: translateY(-6px);
+}
+
+.plan:hover .btn-outline-light{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+.card-header{
+    background-color: transparent;
+}
+
+.card-header h6{
+    color: var(--text-primary);
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.card-body h1{
+    color: var(--text-primary);
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.card-body small{
+    color: var(--text-secondary);
+}
+
+.card-body ul li{
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.card-body i{
+    color: var(--text-primary);
+}
+
+.btn{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn-danger{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-danger:hover{
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-outline-light{
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+}
+
+.btn-outline-light:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
 .btn-danger2 {
   background-color: var(--primary-color);
   border: none;
