@@ -357,7 +357,7 @@ h1 {
   color: var(--text-primary);
 }
 
-.btn-danger {
+.btn-danger2 {
   background-color: var(--primary-color);
   border: none;
   padding: 0.9rem;
@@ -366,7 +366,7 @@ h1 {
   transition: 0.25s;
 }
 
-.btn-danger:hover {
+.btn-danger2:hover {
   background-color: var(--primary-hover);
 }
 
