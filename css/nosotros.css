@@ -280,10 +280,11 @@
   }
 }
 
-.base {
-  background-color: var(--bg-card);
+body {
+  background: var(--bg-secondary);
   color: var(--text-primary);
 }
+
 
 a.enlace {
   color: var(--text-secondary);
