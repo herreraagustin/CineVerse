@@ -1,11 +1,11 @@
-@import url("[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap)");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --primary-color: #e50914;
   --primary-hover: #ff2d55;
-  --bg-primary: #000000;
-  --bg-secondary: #000000;
-  --bg-card: #000000;
+  --bg-primary: #111111;
+  --bg-secondary: #1b1b1b;
+  --bg-card: #202020;
   --text-primary: #ffffff;
   --text-secondary: #b3b3b3;
   --border-color: #2d2d2d;
@@ -17,8 +17,8 @@
   box-sizing: border-box;
 }
 
-html,body {
-  background-color: #000000;
+body {
+  background-color: var(--bg-primary);
   color: var(--text-primary);
 }
 
@@ -278,13 +278,21 @@ html,body {
   font-weight: 600;
 }
 
+.contacto-body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.contacto-info,
+.form-contacto-cine-card {
+  height: 100%;
+}
+
 .contacto-info {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  height: 100%;
 }
 
 .contacto-info-titulo {
@@ -319,7 +327,7 @@ html,body {
   min-width: 42px;
   border-radius: 50%;
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,11 +367,11 @@ html,body {
   transform: translateY(-2px);
 }
 
-.form-contacto-cine-section{
+.form-contacto-cine-section {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-.form-contacto-cine-card{
+.form-contacto-cine-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -385,6 +393,7 @@ html,body {
 .campo-input {
   width: 100%;
   background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   padding: 10px 14px;
   font-family: "Montserrat", Arial, sans-serif;
@@ -398,12 +407,13 @@ html,body {
 }
 
 .campo-input:focus {
+  outline: none;
   border-color: var(--primary-color);
 }
 
 .campo-textarea {
   resize: vertical;
-  min-height: 110%;
+  min-height: 120px;
   font-family: "Montserrat", Arial, sans-serif;
 }
 
@@ -442,5 +452,10 @@ html,body {
 
   .btn-suscribir {
     text-align: center;
+  }
+
+  .contacto-info,
+  .form-contacto-cine-card {
+    height: auto;
   }
 }
