@@ -274,8 +274,25 @@
   max-width: 480px;
 }
 
+.btn-hero-primario {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
 .btn-hero-primario:hover {
   background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
   color: var(--text-primary);
 }
 
@@ -574,26 +591,26 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
- 
+
 .categorias-section .row {
   margin-left: 0;
   margin-right: 0;
 }
- 
+
 .categorias-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
- 
+
 .categorias-header h2 {
   font-size: 20px;
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
 }
- 
+
 .categoria-card {
   position: relative;
   display: flex;
@@ -609,18 +626,18 @@ body {
   border: 1px solid var(--border-color);
   transition: transform 0.25s ease;
 }
- 
+
 .categoria-card::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.55) 100%);
 }
- 
+
 .categoria-card:hover {
   transform: scale(1.04);
 }
- 
+
 .categoria-nombre {
   position: relative;
   z-index: 1;
@@ -685,5 +702,50 @@ body {
 
   .logo-box span {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-principal {
+    min-height: 420px;
+    padding: 50px 0;
+  }
+
+  .hero-imagen-fondo {
+    object-position: 70% center;
+  }
+
+  .hero-contenido {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero-subtitulo {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-titulo,
+  .hero-titulo-rojo {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .hero-descripcion {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .hero-botones {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px !important;
+  }
+
+  .btn-hero-primario,
+  .btn-hero-secundario {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
