@@ -361,21 +361,16 @@ body {
     transition:.35s;
 }
 
-/* Gradiente transparente */
-
 .overlay{
     position:absolute;
     inset:0;
     background:linear-gradient(
         to top,
-        rgba(0,0,0,.88) 0%,
-        rgba(0,0,0,.45) 40%,
-        rgba(0,0,0,.05) 75%,
-        transparent 100%
+        rgba(0,0,0,.92) 0%,
+        rgba(0,0,0,.55) 40%,
+        transparent 80%
     );
 }
-
-/* Texto */
 
 .card-img-overlay{
     z-index:2;
@@ -383,24 +378,49 @@ body {
 }
 
 .card-img-overlay h4{
-    color:var(--text-primary);
+    color:white;
     font-weight:700;
 }
 
 .cargo{
-    color:var(--text-secondary);
+    color:#c7c7c7;
 }
 
-/* Hover */
+.social-btn{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.social-btn i{
+    font-size:1.2rem;
+}
+
+.social-btn:hover{
+    background:var(--primary-color);
+    border-color:var(--primary-color);
+    color:white;
+}
 
 .integrante:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 }
 
 .integrante:hover img{
     transform:scale(1.05);
-}
-
-.integrante:hover{
-    box-shadow:0 0 0 2px var(--primary-color);
 }
