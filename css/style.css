@@ -136,87 +136,148 @@
   color: var(--text-primary);
 }
 
-.botfoot {
-  background-color: var(--bg-primary);
+.caja-login {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
   font-family: "Montserrat", sans-serif;
-  border-top: 1px solid var(--border-color);
 }
 
-.botfoot .logo-box img {
-  height: 36px;
-  border-radius: 8px;
+.cerrar-login {
+  float: right;
 }
 
-.botfoot .logo-box span {
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-}
-
-.foot-text {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  max-width: 320px;
-}
-
-.foot-title {
+.login-title {
   color: var(--text-primary);
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-.foot-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.foot-list li {
-  margin-bottom: 10px;
-}
-
-.foot-list a {
+.login-subtitle {
   color: var(--text-secondary);
-  text-decoration: none;
   font-size: 0.9rem;
-  transition: color 0.25s ease;
 }
 
-.foot-list a:hover {
+.login-label {
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.campo-icono {
+  position: relative;
+}
+
+.campo-icono i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.campo-icono .ojo-toggle {
+  left: auto;
+  right: 14px;
+  cursor: pointer;
+}
+
+.login-input {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 0.9rem;
+}
+
+.login-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.login-input:focus {
+  background-color: var(--bg-card);
+  border-color: var(--primary-hover);
+  color: var(--text-primary);
+  box-shadow: none;
+}
+
+.olvide-link {
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.olvide-link:hover {
   color: var(--primary-hover);
 }
 
-.social-row {
-  display: flex;
-  gap: 10px;
+.btn-entrar {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background-color 0.25s ease;
 }
 
-.social-row a {
-  width: 36px;
-  height: 36px;
+.btn-entrar:hover {
+  background-color: var(--primary-hover);
+}
+
+.separador-texto {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.separador-texto::before,
+.separador-texto::after {
+  content: "";
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  background-color: var(--border-color);
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.circulo-red {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
   color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.1rem;
   text-decoration: none;
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease;
+  transition: border-color 0.25s ease;
 }
 
-.social-row a:hover {
-  background-color: var(--primary-color);
+.circulo-red:hover {
+  border-color: var(--primary-hover);
   color: var(--text-primary);
 }
 
-.foot-line {
-  border-color: var(--border-color);
-  opacity: 1;
-  margin: 30px 0 20px;
+.texto-registro {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.link-registro {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-registro:hover {
+  color: var(--primary-hover);
 }
 
 .hero-principal {
@@ -237,7 +298,7 @@
   z-index: 0;
 }
 
-.hero-us { 
+.hero-us {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -323,7 +384,7 @@
   font-family: "Montserrat", Arial, sans-serif;
   box-sizing: border-box;
 }
- 
+
 .peliculas-destacadas-header {
   display: flex;
   align-items: center;
@@ -331,7 +392,7 @@
   margin-bottom: 20px;
   background-size: cover;
 }
- 
+
 .peliculas-destacadas-header h2 {
   font-size: 20px;
   font-weight: 700;
@@ -434,7 +495,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 58%;             
+  width: 58%;
   z-index: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -451,13 +512,17 @@ body {
   filter: brightness(0.75);
 }
 
-.promo-banner::before{
+.promo-banner::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
-   background: linear-gradient(
-    to right,var(--bg-card) 0%, rgba(32, 32, 32, 0.9) 30%, rgba(229, 9, 20, 0.35) 60%,rgba(229, 9, 20, 0.25) 100%
+  background: linear-gradient(
+    to right,
+    var(--bg-card) 0%,
+    rgba(32, 32, 32, 0.9) 30%,
+    rgba(229, 9, 20, 0.35) 60%,
+    rgba(229, 9, 20, 0.25) 100%
   );
 }
 
@@ -468,7 +533,7 @@ body {
   font-family: "Montserrat", Arial, sans-serif;
   box-sizing: border-box;
 }
- 
+
 .series-destacadas-header {
   display: flex;
   align-items: center;
@@ -476,7 +541,7 @@ body {
   margin-bottom: 20px;
   background-size: cover;
 }
- 
+
 .series-destacadas-header h2 {
   font-size: 20px;
   font-weight: 700;
@@ -612,7 +677,12 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.55) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.35) 60%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
 }
 
 .categoria-card:hover {
@@ -629,6 +699,89 @@ body {
   letter-spacing: 0.5px;
   text-align: center;
   padding: 0 8px;
+}
+
+.botfoot {
+  background-color: var(--bg-primary);
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid var(--border-color);
+}
+
+.botfoot .logo-box img {
+  height: 36px;
+  border-radius: 8px;
+}
+
+.botfoot .logo-box span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.foot-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.foot-title {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.foot-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foot-list li {
+  margin-bottom: 10px;
+}
+
+.foot-list a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.25s ease;
+}
+
+.foot-list a:hover {
+  color: var(--primary-hover);
+}
+
+.social-row {
+  display: flex;
+  gap: 10px;
+}
+
+.social-row a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.social-row a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+.foot-line {
+  border-color: var(--border-color);
+  opacity: 1;
+  margin: 30px 0 20px;
 }
 
 @media (max-width: 991px) {
@@ -745,8 +898,8 @@ body {
 }
 
 @media (max-width: 991px) {
-  .peliculas-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n+5),
-  .series-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n+5) {
+  .peliculas-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n + 5),
+  .series-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n + 5) {
     display: none;
   }
 
