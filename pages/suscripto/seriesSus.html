@@ -75,7 +75,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/suscripto/seriesSus.html"
+                <a class="nav-link active" href="/pages/suscripto/seriesSus.html"
                   >Series</a
                 >
               </li>
@@ -91,7 +91,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   href="/pages/suscripto/contactoSus.html"
                   >Contacto</a
                 >
@@ -217,7 +217,7 @@
               <div
                 class="series-card"
                 data-bs-toggle="modal"
-                data-bs-target="#loginModal"
+                data-bs-target="#detalleStrangerThingsModal"
                 role="button"
               >
                 <img
@@ -400,86 +400,193 @@
     </footer>
     <div
       class="modal fade"
-      id="loginModal"
+      id="detalleStrangerThingsModal"
       tabindex="-1"
-      aria-labelledby="loginModalLabel"
+      aria-labelledby="detalleStrangerThingsLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content caja-login">
-          <div class="modal-body p-4">
-            <button
-              type="button"
-              class="btn-close btn-close-white cerrar-login"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-            <h2 class="login-title text-center" id="loginModalLabel">
-              Iniciar sesión
-            </h2>
-            <p class="login-subtitle text-center mb-4">
-              Bienvenido de nuevo a CineVerse
-            </p>
-            <form>
-              <div class="mb-3">
-                <label for="loginEmail" class="form-label login-label"
-                  >Correo electrónico</label
-                >
-                <div class="campo-icono">
-                  <i class="bi bi-envelope"></i>
-                  <input
-                    type="email"
-                    class="form-control login-input"
-                    id="loginEmail"
-                    placeholder="ejemplo@cineverse.com"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="mb-2">
-                <label for="loginPassword" class="form-label login-label"
-                  >Contraseña</label
-                >
-                <div class="campo-icono">
-                  <i class="bi bi-lock"></i>
-                  <input
-                    type="password"
-                    class="form-control login-input"
-                    id="loginPassword"
-                    placeholder="Ingresa tu contraseña"
-                    required
-                    minlength="6"
-                  />
-                  <i class="bi bi-eye ojo-toggle"></i>
-                </div>
-              </div>
-              <div class="text-end mb-3">
-                <a href="/pages/error404.html" class="olvide-link"
-                  >¿Olvidaste tu contraseña?</a
-                >
-              </div>
-              <button type="submit" class="btn btn-entrar w-100 mb-3">
-                INICIAR SESIÓN
-              </button>
-            </form>
-            <div class="separador-texto text-center my-3">O continúa con</div>
-            <div class="redes-login d-flex justify-content-center gap-3">
-              <a href="/pages/error404.html" class="circulo-red">
-                <i class="bi bi-google"></i>
-              </a>
-              <a href="/pages/error404.html" class="circulo-red">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="/pages/error404.html" class="circulo-red">
-                <i class="bi bi-apple"></i>
-              </a>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content detalle-serie-box">
+          <button
+            type="button"
+            class="btn-close btn-close-white cerrar-detalle"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row g-0">
+            <div class="col-md-6 detalle-serie-trailer">
+              <iframe
+                src="https://www.youtube.com/embed/b9EkMc79ZSU"
+                title="Trailer Stranger Things"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
             </div>
-            <p class="texto-registro text-center mt-4 mb-0">
-              ¿No tienes cuenta?
-              <a href="/pages/suscripcion.html" class="link-registro"
-                >Suscríbete ahora</a
-              >
-            </p>
+            <div class="col-md-6 detalle-serie-info">
+              <h2 id="detalleStrangerThingsLabel">Stranger Things</h2>
+              <div class="detalle-serie-meta">
+                <span>2023 - Actualidad</span>
+                <span>|</span>
+                <span>5 Temporadas</span>
+                <span class="detalle-serie-clasificacion">16+</span>
+                <span>•</span>
+                <span>Drama, Acción</span>
+              </div>
+              <p class="detalle-serie-sinopsis">
+                Veinte años después de la destrucción de la civilización
+                moderna, Joel es contratado para sacar de contrabando a Ellie,
+                una niña de 14 años, de una zona de cuarentena opresiva.
+              </p>
+              <div class="detalle-serie-episodios">
+                <div class="episodios-header">
+                  <h3>Episodios</h3>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-temporada dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Temporada 1
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Temporada 1</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada 2</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada 3</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada 4</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada 5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <ul class="episodios-lista">
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings1.png"
+                        alt="Episodio 1"
+                      />
+                      <span class="episodios-titulo"
+                        >1. La desaparición de Will Byers</span
+                      >
+                      <span class="episodios-duracion">49 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings2.png"
+                        alt="Episodio 2"
+                      />
+                      <span class="episodios-titulo"
+                        >2. La loca de la calle Maple</span
+                      >
+                      <span class="episodios-duracion">56 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings3.png"
+                        alt="Episodio 3"
+                      />
+                      <span class="episodios-titulo">3. Todo está bien</span>
+                      <span class="episodios-duracion">52 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings4.png"
+                        alt="Episodio 4"
+                      />
+                      <span class="episodios-titulo">4. El cuerpo</span>
+                      <span class="episodios-duracion">51 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings5.png"
+                        alt="Episodio 5"
+                      />
+                      <span class="episodios-titulo"
+                        >5. La pulga y el acróbata</span
+                      >
+                      <span class="episodios-duracion">53 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings6.png"
+                        alt="Episodio 6"
+                      />
+                      <span class="episodios-titulo">6. El monstruo</span>
+                      <span class="episodios-duracion">47 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings7.png"
+                        alt="Episodio 7"
+                      />
+                      <span class="episodios-titulo">7. La bañera</span>
+                      <span class="episodios-duracion">43 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                  <li class="episodios-item">
+                    <a
+                      href="/pages/suscripto/reproductor.html"
+                      class="episodios-link"
+                    >
+                      <img
+                        src="/assets/img/strangerthings8.png"
+                        alt="Episodio 8"
+                      />
+                      <span class="episodios-titulo">8. El otro lado</span>
+                      <span class="episodios-duracion">55 min</span>
+                      <i class="bi bi-play-circle episodios-play"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

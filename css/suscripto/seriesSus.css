@@ -310,6 +310,164 @@ body {
   text-transform: uppercase;
 }
 
+.detalle-serie-box {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.cerrar-detalle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.detalle-serie-trailer {
+  position: relative;
+  min-height: 320px;
+}
+
+.detalle-serie-trailer iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border: none;
+  display: block;
+}
+
+.detalle-serie-info {
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.detalle-serie-info h2 {
+  color: var(--text-primary);
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+}
+
+.detalle-serie-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.detalle-serie-clasificacion {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.detalle-serie-sinopsis {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.detalle-serie-episodios {
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+
+.episodios-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.episodios-header h3 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.btn-temporada {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.btn-temporada:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+}
+
+.episodios-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.episodios-item {
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.episodios-item:hover {
+  background-color: var(--bg-card);
+}
+
+.episodios-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.episodios-item img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.episodios-titulo {
+  flex: 1;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.episodios-duracion {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.episodios-play {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.episodios-item:hover .episodios-play {
+  color: var(--primary-color);
+}
+
 .pagination .page-link {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -477,5 +635,29 @@ body {
 
   .logo-box span {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .detalle-serie-trailer {
+    min-height: 220px;
+  }
+
+  .detalle-serie-trailer iframe {
+    min-height: 220px;
+  }
+
+  .detalle-serie-info {
+    padding: 20px 18px;
+    max-height: none;
+  }
+
+  .episodios-item img {
+    width: 48px;
+    height: 32px;
+  }
+
+  .episodios-titulo {
+    font-size: 0.8rem;
   }
 }
