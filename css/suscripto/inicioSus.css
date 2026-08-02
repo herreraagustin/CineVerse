@@ -778,14 +778,3 @@ body {
     font-size: 12px;
   }
 }
-
-@media (max-width: 991px) {
-  .peliculas-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n + 5),
-  .series-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n + 5) {
-    display: none;
-  }
-
-  .promo-banner-collage {
-    display: none;
-  }
-}
