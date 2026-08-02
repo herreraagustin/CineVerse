@@ -413,6 +413,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   height: 240px;
+  margin: 2rem;
 }
 
 .promo-banner-texto {
