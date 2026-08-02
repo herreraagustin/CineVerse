@@ -36,7 +36,7 @@
         <div class="container-fluid px-4">
           <a
             class="navbar-brand logo-box d-flex align-items-center"
-            href="index.html"
+            href="/index-sus.html"
           >
             <img
               src="/assets/img/Logo1.png"
@@ -52,40 +52,45 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarSusContent"
+            aria-controls="navbarSusContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSusContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
               <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./index.html"
+                  href="/pages/suscripto/inicioSus.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/noSuscripto/pelicula.html"
+                <a class="nav-link" href="/pages/suscripto/peliculaSus.html"
                   >Peliculas</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/noSuscripto/series.html"
+                <a class="nav-link" href="/pages/suscripto/seriesSus.html"
                   >Series</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/noSuscripto/nosotros.html"
+                <a class="nav-link" href="/pages/suscripto/miLista.html"
+                  >Mi Lista</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/suscripto/nosotrosSus.html"
                   >Nosotros</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/noSuscripto/contacto.html"
+                <a class="nav-link" href="/pages/suscripto/contactoSus.html"
                   >Contacto</a
                 >
               </li>
@@ -99,36 +104,32 @@
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
-                  Buscar
+                  <i class="bi bi-search"></i>
                 </button>
               </form>
-              <div class="dropdown">
+              <div class="dropdown perfil-menu">
                 <button
-                  class="btn btn-login dropdown-toggle d-flex align-items-center gap-2"
+                  class="btn perfil-toggle dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <i class="bi bi-person-circle"></i>
-                  Mi cuenta
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHSvm6pjVKmK4FeZ0JziPZzaMIyo0-iZjB8hUpIpVgSKQL5RZQaypwyxB&s=10"
+                    alt="Avatar de usuario"
+                    class="perfil-avatar"
+                  />
+                  <span class="perfil-nombre">Agustín</span>
+                  <span class="perfil-badge">PREMIUM</span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./pages/noSuscripto/error404.html"
-                    >
-                      <i class="bi bi-gear me-2"></i> Configuración
-                    </a>
-                  </li>
+                  <li><a class="dropdown-item" href="./error404Sus.html">Mi perfil</a></li>
+                  <li><a class="dropdown-item" href="./error404Sus.html">Configuración</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="./pages/noSuscripto/error404.html"
+                    <a class="dropdown-item" href="/index.html"
+                      >Cerrar sesión</a
                     >
-                      <i class="bi bi-box-arrow-right me-2"></i> Cerrar sesión
-                    </a>
                   </li>
                 </ul>
               </div>
