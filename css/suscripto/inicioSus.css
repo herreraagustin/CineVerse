@@ -162,13 +162,6 @@
   margin: 6px 0;
 }
 
-.caja-login {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  font-family: "Montserrat", sans-serif;
-}
-
 .hero-principal {
   position: relative;
   min-height: 480px;
@@ -177,7 +170,7 @@
   overflow: hidden;
 }
 
-.hero-imagen-fondo {
+.hero-sus-fondo {
   position: absolute;
   inset: 0;
   width: 100%;
