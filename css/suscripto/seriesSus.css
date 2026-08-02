@@ -637,3 +637,27 @@ body {
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 767px) {
+  .detalle-serie-trailer {
+    min-height: 220px;
+  }
+
+  .detalle-serie-trailer iframe {
+    min-height: 220px;
+  }
+
+  .detalle-serie-info {
+    padding: 20px 18px;
+    max-height: none;
+  }
+
+  .episodios-item img {
+    width: 48px;
+    height: 32px;
+  }
+
+  .episodios-titulo {
+    font-size: 0.8rem;
+  }
+}
