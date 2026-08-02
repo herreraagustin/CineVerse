@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="suscripción streaming, planes streaming, CineVerse Premium, planes, membresía, streaming HD"
+    />
+    <meta
+      name="description"
+      content="Conoce los planes de suscripción de CineVerse y elige el que mejor se adapte a ti. Accede a películas y series con beneficios exclusivos."
+    />
+    <meta name="author" content="DreamTeam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/Logo1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/noSuscripto/suscripcion.css" />
+    <title>CineVerse | Suscripción</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg topbar sticky-top">
+        <div class="container-fluid px-4">
+          <a
+            class="navbar-brand logo-box d-flex align-items-center"
+            href="/index.html"
+          >
+            <img
+              src="/assets/img/Logo1.png"
+              alt="Logo CineVerse"
+              class="me-2"
+            />
+            <span
+              ><span class="cine-white">Cine</span
+              ><span class="cine-red">Verse</span></span
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/noSuscripto/pelicula.html"
+                  >Peliculas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/noSuscripto/series.html"
+                  >Series</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/noSuscripto/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/noSuscripto/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex align-items-center right-side">
+              <form class="buscador me-3 d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar películas o series..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+              <button
+                type="button"
+                class="btn btn-login me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Iniciar Sesion
+              </button>
+              <a
+                href="/pages/noSuscripto/suscripcion.html"
+                class="btn btn-suscribir"
+                >Suscribirse</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article class="container-fluid base py-5">
+        <div class="container">
+          <h1 class="text-center fw-bold mb-5">Elige tu plan</h1>
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card plan bg-dark text-white rounded-4">
+                <div class="card-header bg-transparent border-1 pt-4">
+                  <h6 class="text-uppercase text-center fw-bold">Básico</h6>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h1 class="display-4 fw-bold text-center">
+                    $4,99
+                    <small class="fs-6 text-secondary">/mes</small>
+                  </h1>
+                  <ul class="list-unstyled mt-5 mb-5">
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      1 pantalla
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Calidad HD
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Catálogo limitado
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Sin descargas
+                    </li>
+                  </ul>
+                  <a href="./error404.html" class="mt-auto">
+                    <button class="btn btn-outline-light w-100 rounded-3">
+                      Elegir plan
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card plan bg-dark text-white rounded-4">
+                <div class="card-header bg-transparent border-1 pt-4">
+                  <h6 class="text-uppercase text-center fw-bold">Estándar</h6>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h1 class="display-4 fw-bold text-center">
+                    $7,99
+                    <small class="fs-6 text-secondary">/mes</small>
+                  </h1>
+                  <ul class="list-unstyled mt-5 mb-5">
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      2 pantallas
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Calidad Full HD
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Catálogo completo
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Descargas
+                    </li>
+                  </ul>
+                  <a href="./error404.html" class="mt-auto">
+                    <button class="btn btn-outline-light w-100 rounded-3">
+                      Elegir plan
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card plan bg-dark text-white rounded-4">
+                <div class="card-header bg-transparent border-1 pt-4">
+                  <h6 class="text-uppercase text-center fw-bold">Premium</h6>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h1 class="display-4 fw-bold text-center">
+                    $11,99
+                    <small class="fs-6 text-secondary">/mes</small>
+                  </h1>
+                  <ul class="list-unstyled mt-5 mb-5">
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      4 pantallas
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Calidad 4K Ultra HD
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Catálogo completo
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-check-lg me-2"></i>
+                      Descargas
+                    </li>
+                  </ul>
+                  <a href="./error404.html" class="mt-auto">
+                    <button class="btn btn-outline-light w-100 rounded-3">
+                      Elegir plan
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section class="container py-5">
+        <div class="row justify-content-center">
+          <div>
+            <h1 class="text-center fw-bold mb-5">Crea tu cuenta</h1>
+            <form>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Tu nombre"
+                    minlength="2"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido"
+                    placeholder="Tu apellido"
+                    minlength="2"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="correo@ejemplo.com"
+                    minlength="5"
+                    maxlength="200"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="confirmarEmail" class="form-label"
+                    >Confirmar Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="confirmarEmail"
+                    placeholder="Repite tu correo"
+                    minlength="5"
+                    maxlength="200"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="pais" class="form-label">País</label>
+                  <select id="pais" class="form-select" required>
+                    <option value="" selected disabled>
+                      Seleccione un país
+                    </option>
+                    <option>Argentina</option>
+                    <option>Uruguay</option>
+                    <option>Chile</option>
+                    <option>Paraguay</option>
+                    <option>Brasil</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="••••••••"
+                    minlength="8"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="confirmarPassword" class="form-label">
+                    Confirmar Contraseña
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmarPassword"
+                    placeholder="••••••••"
+                    minlength="8"
+                    maxlength="40"
+                    required
+                  />
+                </div>
+                <div class="col-12 mt-4">
+                  <button class="btn btn-danger2 w-100">Crear Cuenta</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="botfoot">
+      <div class="container-fluid px-4 py-5">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="logo-box d-flex align-items-center mb-3">
+              <img
+                src="/assets/img/Logo1.png"
+                alt="Logo CineVerse"
+                class="me-2"
+              />
+              <span
+                ><span class="cine-white">Cine</span
+                ><span class="cine-red">Verse</span></span
+              >
+            </div>
+            <p class="foot-text">
+              Tu plataforma de streaming favorita. Películas y series, donde
+              quieras y cuando quieras.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h6 class="foot-title">Enlaces</h6>
+            <ul class="foot-list">
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/pages/noSuscripto/pelicula.html">Peliculas</a></li>
+              <li><a href="/pages/noSuscripto/series.html">Series</a></li>
+              <li>
+                <a href="/pages/noSuscripto/suscripcion.html">Suscripción</a>
+              </li>
+              <li><a href="/pages/noSuscripto/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h6 class="foot-title">Categorías</h6>
+            <ul class="foot-list">
+              <li><a href="/pages/noSuscripto/error404.html">Acción</a></li>
+              <li><a href="/pages/noSuscripto/error404.html">Comedia</a></li>
+              <li><a href="/pages/noSuscripto/error404.html">Terror</a></li>
+              <li>
+                <a href="/pages/noSuscripto/error404.html">Ciencia ficción</a>
+              </li>
+              <li><a href="/pages/noSuscripto/error404.html">Drama</a></li>
+              <li><a href="/pages/noSuscripto/error404.html">Romance</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6 class="foot-title">Síguenos</h6>
+            <div class="social-row">
+              <a href="https://github.com/herreraagustin/CineVerse"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://trello.com/b/086Mx1SU/cineverse"
+                ><i class="bi bi-trello"></i
+              ></a>
+              <a href="/pages/noSuscripto/error404.html"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="/pages/noSuscripto/error404.html"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <hr class="foot-line" />
+          <p class="foot-copy mb-0">
+            © 2024 CineVerse. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content caja-login">
+          <div class="modal-body p-4">
+            <button
+              type="button"
+              class="btn-close btn-close-white cerrar-login"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <h2 class="login-title text-center" id="loginModalLabel">
+              Iniciar sesión
+            </h2>
+            <p class="login-subtitle text-center mb-4">
+              Bienvenido de nuevo a CineVerse
+            </p>
+            <form action="/pages/suscripto/inicioSus.html" method="get">
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label login-label"
+                  >Correo electrónico</label
+                >
+                <div class="campo-icono">
+                  <i class="bi bi-envelope"></i>
+                  <input
+                    type="email"
+                    class="form-control login-input"
+                    id="loginEmail"
+                    placeholder="ejemplo@cineverse.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="loginPassword" class="form-label login-label"
+                  >Contraseña</label
+                >
+                <div class="campo-icono">
+                  <i class="bi bi-lock"></i>
+                  <input
+                    type="password"
+                    class="form-control login-input"
+                    id="loginPassword"
+                    placeholder="Ingresa tu contraseña"
+                    required
+                    minlength="6"
+                  />
+                  <i class="bi bi-eye ojo-toggle"></i>
+                </div>
+              </div>
+              <div class="text-end mb-3">
+                <a href="/pages/noSuscripto/error404.html" class="olvide-link"
+                  >¿Olvidaste tu contraseña?</a
+                >
+              </div>
+              <button type="submit" class="btn btn-entrar w-100 mb-3">
+                INICIAR SESIÓN
+              </button>
+            </form>
+            <div class="separador-texto text-center my-3">O continúa con</div>
+            <div class="redes-login d-flex justify-content-center gap-3">
+              <a href="/pages/noSuscripto/error404.html" class="circulo-red">
+                <i class="bi bi-google"></i>
+              </a>
+              <a href="/pages/noSuscripto/error404.html" class="circulo-red">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="/pages/noSuscripto/error404.html" class="circulo-red">
+                <i class="bi bi-apple"></i>
+              </a>
+            </div>
+            <p class="texto-registro text-center mt-4 mb-0">
+              ¿No tienes cuenta?
+              <a
+                href="/pages/noSuscripto/suscripcion.html"
+                class="link-registro"
+                >Suscríbete ahora</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
