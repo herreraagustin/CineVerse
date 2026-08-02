@@ -204,3 +204,53 @@
 .btn-control-texto:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+  .reproductor-topbar {
+    padding: 16px 18px;
+  }
+
+  .reproductor-titulo {
+    font-size: 0.85rem;
+  }
+
+  .reproductor-error-icono {
+    font-size: 2.2rem;
+  }
+
+  .reproductor-error-titulo {
+    font-size: 0.95rem;
+  }
+
+  .reproductor-error-texto {
+    font-size: 0.8rem;
+  }
+
+  .reproductor-controles {
+    padding: 20px 18px 14px;
+  }
+
+  .controles-izquierda,
+  .controles-derecha {
+    gap: 10px;
+  }
+
+  .btn-control {
+    font-size: 1rem;
+  }
+
+  .btn-control-play {
+    font-size: 1.3rem;
+  }
+
+  .btn-control-texto {
+    font-size: 0.65rem;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .controles-derecha .btn-control-texto:nth-child(2) {
+    display: none;
+  }
+}
