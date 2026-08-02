@@ -100,40 +100,15 @@
   background-color: transparent;
 }
 
-.btn-login {
-  background-color: transparent;
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  border-radius: 20px;
-  padding: 8px 20px;
+.dropdown-menu-end .dropdown-item {
+  display: flex;
+  align-items: center;
   font-size: 0.9rem;
-  font-weight: 500;
-  transition:
-    border-color 0.25s ease,
-    color 0.25s ease;
 }
 
-.btn-login:hover {
-  border-color: var(--primary-hover);
-  color: var(--primary-hover);
-}
-
-.btn-suscribir {
-  background-color: var(--primary-color);
-  border: none;
-  color: var(--text-primary);
-  border-radius: 20px;
-  padding: 8px 22px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.25s ease;
-}
-
-.btn-suscribir:hover {
-  background-color: var(--primary-hover);
-  color: var(--text-primary);
+.dropdown-menu-end .dropdown-divider {
+  border-color: var(--border-color);
+  margin: 6px 0;
 }
 
 .caja-login {
@@ -141,143 +116,6 @@
   border: 1px solid var(--border-color);
   border-radius: 16px;
   font-family: "Montserrat", sans-serif;
-}
-
-.cerrar-login {
-  float: right;
-}
-
-.login-title {
-  color: var(--text-primary);
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
-.login-subtitle {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
-
-.login-label {
-  color: var(--text-primary);
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-bottom: 6px;
-}
-
-.campo-icono {
-  position: relative;
-}
-
-.campo-icono i {
-  position: absolute;
-  left: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-secondary);
-}
-
-.campo-icono .ojo-toggle {
-  left: auto;
-  right: 14px;
-  cursor: pointer;
-}
-
-.login-input {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  border-radius: 10px;
-  padding: 10px 40px;
-  font-size: 0.9rem;
-}
-
-.login-input::placeholder {
-  color: var(--text-secondary);
-}
-
-.login-input:focus {
-  background-color: var(--bg-card);
-  border-color: var(--primary-hover);
-  color: var(--text-primary);
-  box-shadow: none;
-}
-
-.olvide-link {
-  color: var(--primary-color);
-  font-size: 0.85rem;
-  text-decoration: none;
-}
-
-.olvide-link:hover {
-  color: var(--primary-hover);
-}
-
-.btn-entrar {
-  background-color: var(--primary-color);
-  color: var(--text-primary);
-  border: none;
-  border-radius: 10px;
-  padding: 12px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  transition: background-color 0.25s ease;
-}
-
-.btn-entrar:hover {
-  background-color: var(--primary-hover);
-}
-
-.separador-texto {
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  position: relative;
-}
-
-.separador-texto::before,
-.separador-texto::after {
-  content: "";
-  display: inline-block;
-  width: 30%;
-  height: 1px;
-  background-color: var(--border-color);
-  vertical-align: middle;
-  margin: 0 10px;
-}
-
-.circulo-red {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: border-color 0.25s ease;
-}
-
-.circulo-red:hover {
-  border-color: var(--primary-hover);
-  color: var(--text-primary);
-}
-
-.texto-registro {
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-}
-
-.link-registro {
-  color: var(--primary-color);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.link-registro:hover {
-  color: var(--primary-hover);
 }
 
 .hero-principal {
