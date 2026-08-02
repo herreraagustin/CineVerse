@@ -346,7 +346,7 @@ body {
   padding: 28px 26px;
   display: flex;
   flex-direction: column;
-  max-height: 550px;
+  max-height: 600px;
   overflow-y: auto;
 }
 
@@ -385,14 +385,34 @@ body {
 .detalle-serie-episodios {
   border-top: 1px solid var(--border-color);
   padding-top: 16px;
-  margin-bottom: 20px;
 }
 
-.detalle-serie-episodios h3 {
+.episodios-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.episodios-header h3 {
   color: var(--text-primary);
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 0;
+}
+
+.btn-temporada {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.btn-temporada:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
 }
 
 .episodios-lista {
@@ -405,17 +425,20 @@ body {
 }
 
 .episodios-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  padding: 6px;
   border-radius: 8px;
   transition: background-color 0.2s ease;
 }
 
 .episodios-item:hover {
   background-color: var(--bg-card);
+}
+
+.episodios-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 6px;
 }
 
 .episodios-item img {
