@@ -310,6 +310,8 @@ body {
   text-transform: uppercase;
 }
 
+
+
 .pagination .page-link {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
