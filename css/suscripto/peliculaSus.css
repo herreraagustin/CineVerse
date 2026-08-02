@@ -599,3 +599,22 @@ body {
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 767px) {
+  .detalle-pelicula-trailer {
+    min-height: 220px;
+  }
+
+  .detalle-pelicula-trailer iframe {
+    min-height: 220px;
+  }
+
+  .detalle-pelicula-info {
+    padding: 24px 20px;
+  }
+
+  .detalle-pelicula-datos {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
