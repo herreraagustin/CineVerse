@@ -100,13 +100,64 @@
   background-color: transparent;
 }
 
-.dropdown-menu-end .dropdown-item {
+.perfil-menu .perfil-toggle {
   display: flex;
   align-items: center;
-  font-size: 0.9rem;
+  gap: 8px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  padding: 4px 14px 4px 4px;
+  color: var(--text-primary);
 }
 
-.dropdown-menu-end .dropdown-divider {
+.perfil-menu .perfil-toggle:hover {
+  border-color: var(--primary-hover);
+}
+
+.perfil-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-nombre {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.perfil-badge {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.perfil-menu .dropdown-menu {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 0;
+  margin-top: 10px;
+}
+
+.perfil-menu .dropdown-item {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+
+.perfil-menu .dropdown-item:hover,
+.perfil-menu .dropdown-item:focus {
+  background-color: var(--bg-secondary);
+  color: var(--primary-hover);
+}
+
+.perfil-menu .dropdown-divider {
   border-color: var(--border-color);
   margin: 6px 0;
 }
