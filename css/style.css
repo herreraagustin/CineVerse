@@ -373,26 +373,6 @@
   display: block;
 }
 
-.peliculas-rating {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: rgba(17, 17, 17, 0.85);
-  color: var(--text-primary);
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.peliculas-rating i {
-  color: var(--primary-color);
-  font-size: 10px;
-}
-
 .peliculas-card-info {
   position: absolute;
   bottom: 0;
@@ -433,6 +413,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   height: 240px;
+  margin: 2rem;
 }
 
 .promo-banner-texto {
@@ -725,10 +706,10 @@ body {
     letter-spacing: 1.5px;
   }
 
-  .hero-titulo,
-  .hero-titulo-rojo {
-    font-size: 1.7rem;
-    line-height: 1.2;
+  .hero-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .hero-descripcion {
@@ -739,7 +720,7 @@ body {
   .hero-botones {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px !important;
+    gap: 12px;
   }
 
   .btn-hero-primario,
@@ -747,5 +728,29 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
+  }
+
+  .peliculas-destacadas-section .row,
+  .series-destacadas-section .row {
+    row-gap: 16px;
+  }
+
+  .categorias-section {
+    padding: 30px 16px;
+  }
+
+  .categoria-nombre {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .peliculas-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n+5),
+  .series-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n+5) {
+    display: none;
+  }
+
+  .promo-banner-collage {
+    display: none;
   }
 }
