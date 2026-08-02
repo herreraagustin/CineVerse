@@ -706,10 +706,10 @@ body {
     letter-spacing: 1.5px;
   }
 
-  .hero-titulo,
-  .hero-titulo-rojo {
-    font-size: 1.7rem;
-    line-height: 1.2;
+  .hero-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .hero-descripcion {
@@ -720,7 +720,7 @@ body {
   .hero-botones {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px !important;
+    gap: 12px;
   }
 
   .btn-hero-primario,
@@ -728,5 +728,29 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
+  }
+
+  .peliculas-destacadas-section .row,
+  .series-destacadas-section .row {
+    row-gap: 16px;
+  }
+
+  .categorias-section {
+    padding: 30px 16px;
+  }
+
+  .categoria-nombre {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .peliculas-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n+5),
+  .series-destacadas-section .row.row-cols-lg-5 > .col:nth-child(n+5) {
+    display: none;
+  }
+
+  .promo-banner-collage {
+    display: none;
   }
 }
