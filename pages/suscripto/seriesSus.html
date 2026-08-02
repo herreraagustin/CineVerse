@@ -27,7 +27,7 @@
       href="/assets/img/Logo1.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/css/series.css" />
+    <link rel="stylesheet" href="/css/suscripto/seriesSus.css" />
     <title>CineVerse | Series</title>
   </head>
   <body>
@@ -52,31 +52,49 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarSusContent"
+            aria-controls="navbarSusContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSusContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/pages/suscripto/inicioSus.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/pelicula.html">Peliculas</a>
+                <a class="nav-link" href="/pages/suscripto/peliculaSus.html"
+                  >Peliculas</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/pages/series.html">Series</a>
+                <a class="nav-link" href="/pages/suscripto/seriesSus.html"
+                  >Series</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="/pages/suscripto/error404Sus.html"
+                  >Mi Lista</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="/pages/suscripto/nosotrosSus.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/pages/suscripto/contactoSus.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
             <div class="d-flex align-items-center right-side">
@@ -88,20 +106,43 @@
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
-                  Buscar
+                  <i class="bi bi-search"></i>
                 </button>
               </form>
-              <button
-                type="button"
-                class="btn btn-login me-2"
-                data-bs-toggle="modal"
-                data-bs-target="#loginModal"
-              >
-                Iniciar Sesion
-              </button>
-              <a href="/pages/suscripcion.html" class="btn btn-suscribir"
-                >Suscribirse</a
-              >
+              <div class="dropdown perfil-menu">
+                <button
+                  class="btn perfil-toggle dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHSvm6pjVKmK4FeZ0JziPZzaMIyo0-iZjB8hUpIpVgSKQL5RZQaypwyxB&s=10"
+                    alt="Avatar de usuario"
+                    class="perfil-avatar"
+                  />
+                  <span class="perfil-nombre">Agustín</span>
+                  <span class="perfil-badge">PREMIUM</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="./error404Sus.html"
+                      >Mi perfil</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./error404Sus.html"
+                      >Configuración</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html"
+                      >Cerrar sesión</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
