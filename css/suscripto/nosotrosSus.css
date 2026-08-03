@@ -367,3 +367,91 @@ body {
   display: block;
   margin-left: auto;
 }
+
+.integrante{
+    width: 365px;
+    height: 547px;
+    border: none;
+    overflow: hidden;
+    border-radius: 18px;
+    background: transparent;
+    position: relative;
+    transition: .35s;
+}
+
+.integrante img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.35s;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.92) 0%,
+        rgba(0,0,0,.55) 40%,
+        transparent 80%
+    );
+}
+
+.card-img-overlay{
+    z-index:2;
+    padding:2rem;
+}
+
+.card-img-overlay h4{
+    color:white;
+    font-weight:700;
+}
+
+.cargo{
+    color:#c7c7c7;
+}
+
+.social-btn{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.social-btn i{
+    font-size:1.2rem;
+}
+
+.social-btn:hover{
+    background:var(--primary-color);
+    border-color:var(--primary-color);
+    color:white;
+}
+
+.integrante:hover{
+    transform:translateY(-8px);
+}
+
+.integrante:hover img{
+    transform:scale(1.05);
+}
+
+.separador{
+    width:100%;
+    height:1px;
+    background:var(--border-color);
+}
