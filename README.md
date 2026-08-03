@@ -141,7 +141,10 @@ No requiere instalación de dependencias: Bootstrap, Bootstrap Icons y la tipogr
 
 ## 👥 Equipo
 
-Desarrollado por **DreamTeam**.
+Desarrollado por **DreamTeam**:
+- Lionel Debortoli.
+- Agustin Herrera.
+- Facundo Alvarez.
 
 ## 🔗 Enlaces
 
@@ -152,4 +155,4 @@ Desarrollado por **DreamTeam**.
 
 Este proyecto fue creado con fines educativos/de práctica. Todas las imágenes, videos y contenido de terceros (posters, tráilers) se utilizan únicamente con fines demostrativos y pertenecen a sus respectivos titulares.
 
-© 2024 CineVerse. Todos los derechos reservados.
+© 2026 CineVerse. Todos los derechos reservados.
