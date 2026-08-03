@@ -143,8 +143,13 @@ No requiere instalación de dependencias: Bootstrap, Bootstrap Icons y la tipogr
 
 Desarrollado por **DreamTeam**:
 - Lionel Debortoli.
+- - https://github.com/lioneldebortoli
 - Agustin Herrera.
+- - https://github.com/herreraagustin
+  - https://www.linkedin.com/in/agustín-herrera-022803404/
 - Facundo Alvarez.
+- - https://github.com/facualvarez829-afk
+  - https://www.linkedin.com/in/facundo-alvarez-334606302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
 ## 🔗 Enlaces
 
