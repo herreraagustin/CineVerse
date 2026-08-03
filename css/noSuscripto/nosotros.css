@@ -280,64 +280,64 @@
   color: var(--primary-hover);
 }
 
-.botfoot {
+.pie-cine {
   background-color: var(--bg-primary);
   font-family: "Montserrat", sans-serif;
   border-top: 1px solid var(--border-color);
 }
 
-.botfoot .logo-box img {
+.pie-cine .logo-box img {
   height: 36px;
   border-radius: 8px;
 }
 
-.botfoot .logo-box span {
+.pie-cine .logo-box span {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
 }
 
-.foot-text {
+.pie-texto {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.6;
   max-width: 320px;
 }
 
-.foot-title {
+.pie-encabezado {
   color: var(--text-primary);
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 16px;
 }
 
-.foot-list {
+.pie-links {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.foot-list li {
+.pie-links li {
   margin-bottom: 10px;
 }
 
-.foot-list a {
+.pie-links a {
   color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.25s ease;
 }
 
-.foot-list a:hover {
+.pie-links a:hover {
   color: var(--primary-hover);
 }
 
-.social-row {
+.pie-redes {
   display: flex;
   gap: 10px;
 }
 
-.social-row a {
+.pie-redes a {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -352,18 +352,18 @@
     color 0.25s ease;
 }
 
-.social-row a:hover {
+.pie-redes a:hover {
   background-color: var(--primary-color);
   color: var(--text-primary);
 }
 
-.foot-line {
+.pie-divisor {
   border-color: var(--border-color);
   opacity: 1;
   margin: 30px 0 20px;
 }
 
-.foot-copy {
+.pie-derechos {
   color: var(--text-secondary);
   font-size: 0.85rem;
   text-align: center;
@@ -484,92 +484,4 @@ body {
   object-fit: cover;
   display: block;
   margin-left: auto;
-}
-
-.integrante{
-    width: 365px;
-    height: 547px;
-    border: none;
-    overflow: hidden;
-    border-radius: 18px;
-    background: transparent;
-    position: relative;
-    transition: .35s;
-}
-
-.integrante img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.35s;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,.92) 0%,
-        rgba(0,0,0,.55) 40%,
-        transparent 80%
-    );
-}
-
-.card-img-overlay{
-    z-index:2;
-    padding:2rem;
-}
-
-.card-img-overlay h4{
-    color:white;
-    font-weight:700;
-}
-
-.cargo{
-    color:#c7c7c7;
-}
-
-.social-btn{
-    width:45px;
-    height:45px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    color:white;
-
-    border:1px solid rgba(255,255,255,.18);
-
-    text-decoration:none;
-
-    transition:.3s;
-}
-
-.social-btn i{
-    font-size:1.2rem;
-}
-
-.social-btn:hover{
-    background:var(--primary-color);
-    border-color:var(--primary-color);
-    color:white;
-}
-
-.integrante:hover{
-    transform:translateY(-8px);
-}
-
-.integrante:hover img{
-    transform:scale(1.05);
-}
-
-.separador{
-    width:100%;
-    height:1px;
-    background:var(--border-color);
 }

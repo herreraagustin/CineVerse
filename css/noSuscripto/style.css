@@ -371,7 +371,7 @@
   color: var(--text-primary);
 }
 
-.foot-copy {
+.pie-derechos {
   color: var(--text-secondary);
   font-size: 0.85rem;
   text-align: center;
@@ -701,64 +701,64 @@ body {
   padding: 0 8px;
 }
 
-.botfoot {
+.pie-cine {
   background-color: var(--bg-primary);
   font-family: "Montserrat", sans-serif;
   border-top: 1px solid var(--border-color);
 }
 
-.botfoot .logo-box img {
+.pie-cine .logo-box img {
   height: 36px;
   border-radius: 8px;
 }
 
-.botfoot .logo-box span {
+.pie-cine .logo-box span {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
 }
 
-.foot-text {
+.pie-texto {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.6;
   max-width: 320px;
 }
 
-.foot-title {
+.pie-encabezado {
   color: var(--text-primary);
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 16px;
 }
 
-.foot-list {
+.pie-links {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.foot-list li {
+.pie-links li {
   margin-bottom: 10px;
 }
 
-.foot-list a {
+.pie-links a {
   color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.25s ease;
 }
 
-.foot-list a:hover {
+.pie-links a:hover {
   color: var(--primary-hover);
 }
 
-.social-row {
+.pie-redes {
   display: flex;
   gap: 10px;
 }
 
-.social-row a {
+.pie-redes a {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -773,12 +773,12 @@ body {
     color 0.25s ease;
 }
 
-.social-row a:hover {
+.pie-redes a:hover {
   background-color: var(--primary-color);
   color: var(--text-primary);
 }
 
-.foot-line {
+.pie-divisor {
   border-color: var(--border-color);
   opacity: 1;
   margin: 30px 0 20px;
