@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 .topbar {
   background-color: var(--bg-primary);
   font-family: "Montserrat", sans-serif;
@@ -61,6 +66,10 @@
   gap: 4px;
 }
 
+.buscador {
+  min-width: 0;
+}
+
 .buscador input {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
@@ -69,6 +78,7 @@
   padding: 8px 16px;
   font-size: 0.9rem;
   width: 220px;
+  min-width: 0;
 }
 
 .buscador input::placeholder {
@@ -92,6 +102,7 @@
   transition:
     border-color 0.25s ease,
     color 0.25s ease;
+  flex-shrink: 0;
 }
 
 .buscador .btn-outline-success:hover {
@@ -280,8 +291,9 @@
   color: var(--primary-hover);
 }
 
-.integrante{
-    width: 365px;
+.integrante {
+    width: 100%;
+    max-width: 365px;
     height: 547px;
     border: none;
     overflow: hidden;
@@ -466,7 +478,8 @@
   }
 
   .buscador input {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
   }
 
   .menu {
