@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #e50914;
+  --primary-hover: #ff2d55;
+  --bg-primary: #111111;
+  --bg-secondary: #1b1b1b;
+  --bg-card: #202020;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --border-color: #2d2d2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.topbar {
+  background-color: var(--bg-primary);
+  font-family: "Montserrat", sans-serif;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-color);
+  top: 0;
+  z-index: 1030;
+}
+
+.logo-box img {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.cine-white {
+  color: var(--text-primary);
+}
+
+.cine-red {
+  color: var(--primary-color);
+}
+
+.menu {
+  gap: 6px;
+}
+
+.menu .nav-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: color 0.25s ease;
+}
+
+.menu .nav-link:hover,
+.menu .nav-link.active {
+  color: var(--primary-hover);
+}
+
+.right-side {
+  gap: 4px;
+}
+
+.buscador input {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  width: 220px;
+}
+
+.buscador input::placeholder {
+  color: var(--text-secondary);
+}
+
+.buscador input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-hover);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.buscador .btn-outline-success {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.buscador .btn-outline-success:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+  background-color: transparent;
+}
+
+.btn-login {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.btn-login:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+}
+
+.btn-suscribir {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 8px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.25s ease;
+}
+
+.btn-suscribir:hover {
+  background-color: var(--primary-hover);
+  color: var(--text-primary);
+}
+
+.caja-login {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cerrar-login {
+  float: right;
+}
+
+.login-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.login-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.login-label {
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.campo-icono {
+  position: relative;
+}
+
+.campo-icono i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.campo-icono .ojo-toggle {
+  left: auto;
+  right: 14px;
+  cursor: pointer;
+}
+
+.login-input {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 0.9rem;
+}
+
+.login-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.login-input:focus {
+  background-color: var(--bg-card);
+  border-color: var(--primary-hover);
+  color: var(--text-primary);
+  box-shadow: none;
+}
+
+.olvide-link {
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.olvide-link:hover {
+  color: var(--primary-hover);
+}
+
+.btn-entrar {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background-color 0.25s ease;
+}
+
+.btn-entrar:hover {
+  background-color: var(--primary-hover);
+}
+
+.separador-texto {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.separador-texto::before,
+.separador-texto::after {
+  content: "";
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  background-color: var(--border-color);
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.circulo-red {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: border-color 0.25s ease;
+}
+
+.circulo-red:hover {
+  border-color: var(--primary-hover);
+  color: var(--text-primary);
+}
+
+.texto-registro {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.link-registro {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-registro:hover {
+  color: var(--primary-hover);
+}
+
+.contacto-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 40px 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.contacto-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacto-header h1 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+  letter-spacing: 0.3px;
+}
+
+.contacto-breadcrumb {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.contacto-breadcrumb a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contacto-breadcrumb a:hover {
+  color: var(--primary-hover);
+}
+
+.contacto-breadcrumb-separador {
+  margin: 0 8px;
+  color: var(--border-color);
+}
+
+.contacto-breadcrumb-actual {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.contacto-body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.contacto-info,
+.form-contacto-cine-card {
+  height: 100%;
+}
+
+.contacto-info {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.contacto-info-titulo {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.contacto-info-texto {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.75rem;
+}
+
+.contacto-info-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contacto-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contacto-info-icono {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.contacto-info-label {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contacto-info-valor {
+  display: block;
+  font-weight: 500;
+}
+
+.red-social-icono {
+  width: 38px;
+  height: 38px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.red-social-icono:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.form-contacto-cine-section {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.form-contacto-cine-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 28px 24px;
+}
+
+.campo-grupo {
+  margin-bottom: 20px;
+}
+
+.campo-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.campo-input {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.campo-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.campo-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.campo-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.boton-enviar-cine {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 6px;
+  padding: 13px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.boton-enviar-cine:hover {
+  background-color: var(--primary-hover);
+}
+
+.pie-cine {
+  background-color: var(--bg-primary);
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid var(--border-color);
+}
+
+.pie-cine .logo-box img {
+  height: 36px;
+  border-radius: 8px;
+}
+
+.pie-cine .logo-box span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.pie-texto {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.pie-encabezado {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.pie-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pie-links li {
+  margin-bottom: 10px;
+}
+
+.pie-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.25s ease;
+}
+
+.pie-links a:hover {
+  color: var(--primary-hover);
+}
+
+.pie-redes {
+  display: flex;
+  gap: 10px;
+}
+
+.pie-redes a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.pie-redes a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+.pie-divisor {
+  border-color: var(--border-color);
+  opacity: 1;
+  margin: 30px 0 20px;
+}
+
+.pie-derechos {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .right-side {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 12px;
+    gap: 10px;
+  }
+
+  .buscador input {
+    width: 100%;
+  }
+
+  .menu {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .btn-suscribir {
+    text-align: center;
+  }
+
+  .contacto-info,
+  .form-contacto-cine-card {
+    height: auto;
+  }
+}
